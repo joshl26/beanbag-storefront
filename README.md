@@ -1,4 +1,8 @@
-# Quickstart
+# Testing
+
+[![Beanbag Coffee Storefront](https://img.shields.io/endpoint?url=https://cloud.cypress.io/badge/detailed/o1yco5&style=for-the-badge&logo=cypress)](https://cloud.cypress.io/projects/o1yco5/runs)
+
+## Quickstart
 
 ### Install dependencies
 

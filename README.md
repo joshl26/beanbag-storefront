@@ -22,9 +22,9 @@ yarn dev
 
 ### Open the code and start customizing
 
-Your site is now running at http://localhost:8000!
+Your site is now running at 'http://localhost:8000'
 
-# Payment integrations
+## Payment integrations
 
 By default this starter supports the following payment integrations
 
@@ -40,7 +40,7 @@ NEXT_PUBLIC_PAYPAL_CLIENT_ID=<your-paypal-client-id>
 
 You will also need to setup the integrations in your Medusa server. See the [Medusa documentation](https://docs.medusajs.com) for more information on how to configure [Stripe](https://docs.medusajs.com/add-plugins/stripe) and [PayPal](https://docs.medusajs.com/add-plugins/paypal) in your Medusa project.
 
-# Search integration
+## Search integration
 
 This starter is configured to support using the `medusa-search-meilisearch` plugin out of the box. To enable search you will need to enable the feature flag in `./store.config.json`, which you do by changing the config to this:
 
@@ -99,7 +99,7 @@ export async function search(query: string) {
 
 After this you will need to set up Algolia with your Medusa server, and then you should be good to go. For a more thorough walkthrough of using Algolia with Medusa – [see our documentation](https://docs.medusajs.com/add-plugins/algolia), and the [documentation for using `react-instantsearch-hooks-web`](https://www.algolia.com/doc/guides/building-search-ui/getting-started/react-hooks/).
 
-# Serverless Modules
+## Serverless Modules
 
 > Serverless Modules are currently in beta. You can learn more about them [here](https://docs.medusajs.com/experimental). In addition, the Serverless Modules in the Next.js storefront can't be used without the Medusa backend running at the moment.
 
@@ -114,7 +114,7 @@ Then, make sure to set the following environment variables in your Next.js store
 > WARNING: This is a one way process. Once you opt in to these features and update your database, there's no way back. Proceed with caution.
 
 - `POSTGRES_URL`: the URL of your PostgreSQL databsae.
-- `NEXT_PUBLIC_BASE_URL`: the URL of your storefront's base URL. If you're running it locally, it should be http://localhost:8000.
+- `NEXT_PUBLIC_BASE_URL`: the URL of your storefront's base URL. If you're running it locally, it should be 'http://localhost:8000'.
 
 After that, add the following environment variable to **both your Next.js storefront and Medusa backend** to enable the feature flag:
 
@@ -132,7 +132,7 @@ Done! All product and collection data should now be coming from the module. The 
 
 > Deploying to Vercel? If you're not planning on using the serverless modules, you might encounter errors when deploying to Vercel. You can safely delete or exclude the `src/app/api` folder before deploying. The API routes are only used by the serverless modules.
 
-# Resources
+## Resources
 
 ## Learn more about Medusa
 
@@ -145,4 +145,3 @@ Done! All product and collection data should now be coming from the module. The 
 - [Website](https://nextjs.org/)
 - [GitHub](https://github.com/vercel/next.js)
 - [Documentation](https://nextjs.org/docs)
-"# beanbag-storefront" 

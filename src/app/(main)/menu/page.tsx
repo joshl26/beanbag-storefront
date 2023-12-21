@@ -7,7 +7,7 @@ import Loading from "./loading"
 
 export default async function Menu() {
   // const { collections } = await getCollectionsList(0, 3)
-  const { product_categories } = await getCategoriesList(0, 10)
+  // const { product_categories } = await getCategoriesList(0, 10)
 
   // async function getProducts() {
   //   return medusaClient.products
@@ -26,9 +26,9 @@ export default async function Menu() {
     <Suspense fallback={<Loading />}>
       <main className="main">
         {/* <FeaturedProducts collections={collections} /> */}
-        {product_categories && (
+        {/* {product_categories && (
           <MenuItems product_categories={product_categories} />
-        )}
+        )} */}
       </main>
     </Suspense>
   )

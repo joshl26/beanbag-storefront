@@ -22,4 +22,4 @@ COPY . .
 #ENTRYPOINT [ "yarn", "start"]
 #ENTRYPOINT [ "yarn", "dev"]
 
-CMD ["npm" "run" "start"]
+CMD [npm run start]

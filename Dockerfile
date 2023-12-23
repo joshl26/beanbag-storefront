@@ -17,5 +17,7 @@ RUN yarn --network-timeout 100000
 COPY . .
 
 # Set the default command to run the application in development mode
-ENTRYPOINT [ "yarn", "start"]
+#ENTRYPOINT [ "yarn", "start"]
 #ENTRYPOINT [ "yarn", "dev"]
+
+CMD ["npm" "run" "start"]

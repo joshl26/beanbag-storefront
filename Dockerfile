@@ -21,7 +21,9 @@ COPY . .
 # Set the default command to run the application in development mode
 #ENTRYPOINT [ "yarn", "start"]
 #ENTRYPOINT [ "yarn", "dev"]
-ENTRYPOINT [ "npm", "run", "dev"]
+#ENTRYPOINT [ "npm", "run", "dev"]
+ENTRYPOINT [ "npm", "run", "start"]
+
 
 
 # CMD [npm run start]

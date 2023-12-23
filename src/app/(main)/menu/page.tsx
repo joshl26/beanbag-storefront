@@ -1,5 +1,3 @@
-"use server"
-
 import React, { Suspense } from "react"
 import { getCategoriesList } from "@lib/data"
 import MenuItems from "@modules/menu/components/menu-items"

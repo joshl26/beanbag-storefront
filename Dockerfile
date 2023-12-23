@@ -6,13 +6,15 @@ WORKDIR /app/storefront
 
 # Copy the package.json and yarn lock files to the working directory
 COPY package.json .
-COPY yarn.* .
+#COPY yarn.* .
 
 # Run the apk update command to update package information
 RUN apk update
 
 # Install the dependencies
-RUN yarn --network-timeout 100000
+#RUN yarn --network-timeout 100000
+RUN npm i
+
 # Copy all files in the current directory (.) to the working directory in the container
 COPY . .
 
